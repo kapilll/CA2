@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head><title>
+Reserve Flight
+</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+    <div class="rendered-form">
+        <div class="header">
+            <h1 class="header">Airline Reservation System</h1></div>
+        <form method="POST" action="/reserveflight">
+        <div class=" form-group">
+            <label for="firstname" class="label">Firstname</label></br>
+            <input type="text" class="form-control" name="firstname" id="firstname">
+        </div>
+        <div class=" form-group">
+            <label for="lastname" class="label">Lastname</label></br>
+            <input type="text" class="form-control" name="lastname" id="lastname">
+        </div>
+        <div class=" form-group ">
+            <label for="email" class="label">Email</label></br>
+            <input type="email" class="form-control" name="email" id="email">
+        </div>
+        <div class="form-group">
+            <label for="gender" class="label">Gender</label>
+            <div class="radio-group">
+                <div class="radio">
+                    <input name="gender" id="gender-0" value="male" type="radio" checked="checked">
+                    <label for="gender-0">male</label>
+                </div>
+                <div class="radio">
+                    <input name="gender" id="gender-1" value="female" type="radio">
+                    <label for="gender-1">female</label>
+                </div>
+                <div class="radio">
+                    <input name="gender" id="gender-2" value="other" type="radio">
+                    <label for="gender-2">other</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="food" class="label">Food</label>
+            <div class="checkbox-group">
+                <div class="checkbox">
+                    <input name="food" id="food-0" value="drinks" type="checkbox">
+                    <label for="food-0">Drinks</label>
+                </div>
+                <div class="checkbox">
+                    <input name="food" id="food-1" value="vegfood" type="checkbox">
+                    <label for="food-1">Veg Food</label>
+                </div>
+                <div class="checkbox">
+                    <input name="food" id="food-2" value="nonvegfood" type="checkbox">
+                    <label for="food-2">Non Veg Food</label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="from" class="label">From</label></br>
+            <input type="text" class="form-control" name="from">
+        </div>
+        <div class=" form-group">
+            <label for="destination" class="label">Destination</label></br>
+            <input type="text" class="form-control" name="destination" >
+        </div>
+        <div class="form-group">
+          <button type="submit">Reserve Flight</button>
+        </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>
